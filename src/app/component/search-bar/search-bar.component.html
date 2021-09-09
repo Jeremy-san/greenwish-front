@@ -1,0 +1,23 @@
+<div class='container'>
+<div class="row">
+
+
+
+<div *ngFor='let sheet of sheets' class="col s6 m4">
+  <div class="card horizontal" (click)="selectSheet(sheet)" appBorderCard>
+    <div class="card-image">
+      <img [src]="sheet.picture">
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <p>{{ sheet.site }}</p>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>{{ sheet.code_client }}</p>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

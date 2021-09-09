@@ -8,6 +8,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { HomePageComponent } from './component/home-page/home-page.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { AdminDashboardComponent } from './component/admin-dashboard/admin-dashboard.component';
+import { FormsModule } from '@angular/forms';
+import { SearchBarComponent } from './component/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { AdminDashboardComponent } from './component/admin-dashboard/admin-dashb
     HeaderComponent,
     HomePageComponent,
     SigninComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
